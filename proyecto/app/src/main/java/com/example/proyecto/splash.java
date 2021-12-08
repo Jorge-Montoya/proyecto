@@ -94,7 +94,7 @@ public class splash extends AppCompatActivity {
         @Override
         public void run(){
         try {
-            sleep(6000);
+            sleep(3000);
             Intent pasar=new Intent(getApplicationContext(),MainActivity.class);
             startActivity(pasar);
 
