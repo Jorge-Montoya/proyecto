@@ -1,33 +1,76 @@
 package com.example.proyecto.cosasrecycler;
 
+import android.content.Context;
+import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.proyecto.MainActivity;
 import com.example.proyecto.R;
+import com.example.proyecto.models.modelo;
+
+import java.util.List;
 
 public class adaptator extends RecyclerView.Adapter<adaptator.ViewHolder> {
+
+    private List<modelo> ListModel;
+    private LayoutInflater inflater;
+    private Context context;
+    final adaptator.OnItemClickListener listener;
+
+    public adaptator(List<modelo> listModel, Context context, adaptator.OnItemClickListener listener) {
+        ListModel = listModel;
+        this.inflater=LayoutInflater.from(context);
+        this.context = context;
+        this.listener = listener;
+    }
+
     @NonNull
     @Override
     public adaptator.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view=inflater.inflate(R.layout.item, null);
+        return new adaptator.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull adaptator.ViewHolder holder, int position) {
-
+        holder.binData(ListModel.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return ListModel.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public interface OnItemClickListener {
+        void OnItemClick (adaptator view);
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
+        TextView Nombre;
+        Intent I;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            Nombre=itemView.findViewById(R.id.sensor);
+            itemView.setOnClickListener(this);
         }
+
+        public void binData(modelo modelo) {
+            Nombre.setText(modelo.getNombre());
+            I=modelo.getAccion();
+        }
+        @Override
+        public void onClick(View v) {
+            v.getContext().startActivity(I);
+        }
+
+
     }
+
 }

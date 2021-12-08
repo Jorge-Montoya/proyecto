@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".Humo"
+            android:exported="true" />
+        <activity
+            android:name=".Humedad"
+            android:exported="true" />
+        <activity
+            android:name=".Temperatura"
+            android:exported="true" />
+        <activity
             android:name=".splash"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
