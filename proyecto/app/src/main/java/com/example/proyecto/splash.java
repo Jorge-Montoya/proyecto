@@ -89,11 +89,12 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splash);
-        Thread splash=new Thread(){
+
+        Thread splash = new Thread(){
         @Override
         public void run(){
         try {
-            sleep(2000);
+            sleep(6000);
             Intent pasar=new Intent(getApplicationContext(),MainActivity.class);
             startActivity(pasar);
 
@@ -130,7 +131,7 @@ public class splash extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
-       // mControlsView.setVisibility(View.GONE);
+        mControlsView.setVisibility(View.GONE);
         mVisible = false;
 
         // Schedule a runnable to remove the status and navigation bar after a delay

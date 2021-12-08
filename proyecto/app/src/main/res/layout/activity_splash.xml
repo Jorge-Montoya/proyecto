@@ -9,11 +9,11 @@
     tools:context=".splash">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/r1"
+        android:background="@drawable/intentodesplash"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
