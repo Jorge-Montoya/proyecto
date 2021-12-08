@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView reci;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         List<modelo> elements=new ArrayList<>();
 
-
         elements.add(new modelo("Temperatura",new Intent(this,Temperatura.class)));
         elements.add(new modelo("Humedad",new Intent(this,Temperatura.class)));
         elements.add(new modelo("Humo",new Intent(this,Temperatura.class)));
+        elements.add(new modelo("Ultrasonico",new Intent(this,Temperatura.class)));
+        elements.add(new modelo("Movimiento",new Intent(this,Temperatura.class)));
 
         adaptator root=new adaptator(elements, this, new adaptator.OnItemClickListener() {
             @Override

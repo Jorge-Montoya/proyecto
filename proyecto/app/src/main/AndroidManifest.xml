@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
         <activity
+            android:name=".Movimiento"
+            android:exported="true" />
+        <activity
+            android:name=".Ultrasonico"
+            android:exported="true" />
+        <activity
             android:name=".Humo"
             android:exported="true" />
         <activity
@@ -23,9 +29,10 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
             android:label="@string/title_activity_splash"
-            android:theme="@style/Theme.Proyecto.Fullscreen" >
+            android:theme="@style/Theme.Proyecto.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
