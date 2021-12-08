@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/jorge/AndroidStudioProjects/carpetaproyecto/proyecto/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/jorge/AndroidStudioProjects/carpetaproyecto/proyecto/app/src/main/res/layout/activity_splash.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/jorge/AndroidStudioProjects/carpetaproyecto/proyecto/app/src/main/res/layout/item.xml" value="0.27291666666666664" />
+=======
+        <entry key="..\:/Users/jared/AndroidStudioProjects/Proyecto_Android/proyecto/proyecto/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jared/AndroidStudioProjects/Proyecto_Android/proyecto/proyecto/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jared/AndroidStudioProjects/Proyecto_Android/proyecto/proyecto/app/src/main/res/layout/item.xml" value="0.4" />
+>>>>>>> b214914c24b159fb6df5f0ae467416a3e5ffe80c
         <entry key="..\:/Users/jorge/AndroidStudioProjects/proyecto/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/jorge/AndroidStudioProjects/proyecto/app/src/main/res/layout/activity_splash.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/jorge/AndroidStudioProjects/proyecto/app/src/main/res/layout/item.xml" value="0.27291666666666664" />
