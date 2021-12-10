@@ -5,19 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Humo">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="492dp"
+        android:layout_height="752dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper" />
+
     <TextView
+        android:id="@+id/titulosensor3"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:text="Sensor Humo"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:background="#936E91"
         android:layout_marginTop="20dp"
-        android:id="@+id/titulosensor3"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#936E91"
+        android:fontFamily="sans-serif-black"
+        android:text="Sensor Humo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/linears3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:layout_width="370dp"
         android:layout_height="400dp"
@@ -35,5 +48,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

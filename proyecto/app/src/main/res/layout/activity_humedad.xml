@@ -5,19 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Humedad">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="516dp"
+        android:layout_height="768dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper" />
+
     <TextView
+        android:id="@+id/titulosensor"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:text="Sensor Humedad"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:background="#936E91"
         android:layout_marginTop="20dp"
-        android:id="@+id/titulosensor"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="#936E91"
+        android:fontFamily="sans-serif-black"
+        android:text="Sensor Humedad"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/linears"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:layout_width="370dp"
         android:layout_height="400dp"
@@ -28,12 +41,12 @@
         app:layout_constraintTop_toBottomOf="@id/titulosensor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
+
         <TextView
-            android:layout_width="350dp"
             android:layout_height="380dp"
-            android:background="#A575A8"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            />
+            android:layout_marginTop="10dp"
+            android:background="#A575A8" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
