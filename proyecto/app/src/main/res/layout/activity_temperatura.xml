@@ -43,6 +43,21 @@
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
             android:layout_width="350dp"
+            android:layout_height="185dp"
+            android:id="@+id/elfeed_id2"
+            android:background="#A575A8"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="185dp"
+            android:id="@+id/valor2"
+            android:background="#A575A8"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            /><TextView
+            android:layout_width="350dp"
             android:layout_height="380dp"
             android:background="#A575A8"
             android:layout_marginTop="10dp"
